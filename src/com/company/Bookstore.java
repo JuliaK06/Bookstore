@@ -15,7 +15,7 @@ public class Bookstore {
 
         }
     }
-
+//tuka ima[ o]e ne]a za slagane
     public List<Book> getBooks() {
         return books;
     }
