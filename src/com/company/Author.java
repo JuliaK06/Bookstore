@@ -8,7 +8,15 @@ public class Author {
      this.age=0;
  }
 
-  public Author(String name, int age) {
+    @Override
+    public String toString() {
+        return "Author{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+    public Author(String name, int age) {
         this.name = name;
         this.age = age;
     }

@@ -16,11 +16,10 @@ public class Bookstore {
             System.out.print("There are no books available");
         else {
             book.setAvailables(--a);
-            System.out.println(book.getAuthor()+ " "+ book.getPrice());
+            System.out.println("Продаваме книгата със нова цена: " + book.getPrice());
 
         }
     }
-//tuka ima[ o]e ne]a za slagane
     public List<Book> getBooks() {
         return books;
     }

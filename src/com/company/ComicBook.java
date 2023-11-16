@@ -15,14 +15,13 @@ public class ComicBook extends Book{
     }
 
     @Override
-    public double getPrice() {
-        double v = super.getPrice() * 0.4;
-        System.out.print(v);
-        return v;
-
+    public double getPrice(){
+        double newPrice = super.getOriginalPrice() * 0.4;
+        System.out.println("Цената на книгата " + this.toString() + " с отстъпка 60% е " + newPrice);
+        return newPrice;
     }
 public double getPrice(double priceReduction){
-return (super.getPrice())*priceReduction;
+return (super.getOriginalPrice())*priceReduction;
     }
 
 

@@ -12,9 +12,9 @@ public class ChildrenBook extends Book {
     }
     @Override
     public double getPrice(){
-        double v = super.getPrice() * 0.3;
-        System.out.print(v);
-        return v;
+        double newPrice = super.getOriginalPrice() * 0.3;
+        System.out.println("Цената на книгата " + this.toString() + " с отстъпка 70% е " + newPrice);
+        return newPrice;
     }
     public int getAge() {
         return age;

@@ -6,21 +6,20 @@ public class Book {
     private Booktype type;
     private Author author;
     private int availables;
-    private  double price ;
+    private  double originalPrice;
  public Book(){
      this.title=null;
      this.type=Booktype.BOOK;
-     this.author.setAge(0);
-     this.author.setName(null);
+     this.author=null;
      this.availables=0;
-     this.price=0;
+     this.originalPrice =0;
  }
-    public Book(String title, Booktype type, Author author, int availables, double price) {
+    public Book(String title, Booktype type, Author author, int availables, double originalPrice) {
         this.title = title;
         this.type = type;
         this.author = author;
         this.availables = availables;
-        this.price = price;
+        this.originalPrice = originalPrice;
     }
 
 
@@ -57,11 +56,25 @@ public class Book {
         this.availables = availables;
     }
 
+    public double getOriginalPrice() {
+        return originalPrice;
+    }
     public double getPrice() {
-        return price;
+        System.out.println("Цената на книгата " + this.toString() + " е " + originalPrice);
+        return originalPrice;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", author=" + author +
+                '}';
+    }
+
+
+
+    public void setOriginalPrice(double originalPrice) {
+        this.originalPrice = originalPrice;
     }
 }
