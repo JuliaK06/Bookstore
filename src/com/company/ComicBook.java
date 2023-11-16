@@ -4,6 +4,10 @@ public class ComicBook extends Book{
     private String characterName;
 
 
+    public ComicBook() {
+        super();
+        this.characterName=null;
+    }
 
     public ComicBook(String title, Booktype type, Author author, int availables, double price, String characterName) {
         super(title, type, author, availables, price)   ;
@@ -12,14 +16,13 @@ public class ComicBook extends Book{
 
     @Override
     public double getPrice() {
-        double v = super.getPrice() * 0.6;
+        double v = super.getPrice() * 0.4;
         System.out.print(v);
         return v;
 
     }
 public double getPrice(double priceReduction){
-        //питай госпожата какво има предвид под аргумент процент за отстъпк - double ili int
-return super.getPrice()*priceReduction;
+return (super.getPrice())*priceReduction;
     }
 
 

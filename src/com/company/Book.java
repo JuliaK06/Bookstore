@@ -7,7 +7,14 @@ public class Book {
     private Author author;
     private int availables;
     private  double price ;
-
+ public Book(){
+     this.title=null;
+     this.type=Booktype.BOOK;
+     this.author.setAge(0);
+     this.author.setName(null);
+     this.availables=0;
+     this.price=0;
+ }
     public Book(String title, Booktype type, Author author, int availables, double price) {
         this.title = title;
         this.type = type;

@@ -5,6 +5,11 @@ import java.util.List;
 
 public class Bookstore {
     List<Book> books=new ArrayList<>();
+    public Bookstore(List<Book> books) {
+        this.books = books;
+    }
+
+
     public void sell(Book book){
         int a=book.getAvailables();
         if(a==0)
