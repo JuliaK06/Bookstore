@@ -16,7 +16,7 @@ public class Bookstore {
             System.out.print("There are no books available");
         else {
             book.setAvailables(--a);
-            System.out.println("Продаваме книгата със нова цена: " + book.getPrice());
+            System.out.println("Продаваме книгата на цена: " + book.getPrice());
 
         }
     }

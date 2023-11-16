@@ -10,9 +10,8 @@ public class Main {
  Bookstore bookstore=new Bookstore(books1);
         System.out.println("Въведете брой книги");
   int numberOfBooks;
-
   numberOfBooks=sc.nextInt();
-
+        System.out.println("въведете следните данни за книгата <Тип/COMIC_BOOK/CHILDREN_BOOK/BOOK><Заглавие><Име и възраст на автор><Брой налични книги><<Цена>");
    for(int i=0;i<numberOfBooks;i++){
        Book book;
        Booktype type = Booktype.valueOf(sc.next().toUpperCase());
