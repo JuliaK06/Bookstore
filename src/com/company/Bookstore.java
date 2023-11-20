@@ -13,7 +13,7 @@ public class Bookstore {
     public void sell(Book book){
         int a=book.getAvailables();
         if(a==0)
-            System.out.print("There are no books available");
+            System.out.println("Няма наличност от книгата със следните характеристики:  "+book.toString());
         else {
             book.setAvailables(--a);
             System.out.println("Продаваме книгата на цена: " + book.getPrice());

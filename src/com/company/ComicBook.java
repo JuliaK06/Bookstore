@@ -20,7 +20,8 @@ public class ComicBook extends Book{
         System.out.println("Цената на книгата " + this.toString() + " с отстъпка 60% е " + newPrice);
         return newPrice;
     }
-public double getPrice(double priceReduction){
+
+    public double getPrice(double priceReduction){
 return (super.getOriginalPrice())*priceReduction;
     }
 

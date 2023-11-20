@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Въведете брой книги");
   int numberOfBooks;
   numberOfBooks=sc.nextInt();
-        System.out.println("въведете следните данни за книгата <Тип/COMIC_BOOK/CHILDREN_BOOK/BOOK><Заглавие><Име и възраст на автор><Брой налични книги><<Цена>");
+        System.out.println("Въведете следните данни за книгата <Тип/COMIC_BOOK/CHILDREN_BOOK/BOOK><Заглавие><Име и възраст на автор><Брой налични книги><<Цена>"+"\n"+" Забележка: Заглавието на книгата и името на авторът трябва да са по една дума, т.е да са написани без интервали.");
    for(int i=0;i<numberOfBooks;i++){
        Book book;
        Booktype type = Booktype.valueOf(sc.next().toUpperCase());
@@ -48,6 +48,7 @@ public class Main {
    for(int i=0;i< numberOfBooks;i+=2){
        Book  book=books1.get(i);
        bookstore.sell(book);
+
    }
 
     }
